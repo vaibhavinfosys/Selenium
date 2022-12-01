@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1">
+  <groups>
+  <run>
+  <include name="userInterface"></include>
+  </run>
+  </groups>
+   <classes>
+      <class name="Grouping_in_TestNG.Grouping"/>
+    </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" name="Test2">
+   <groups>
+   <run>
+   <include name="login functionality"></include>
+   </run>
+   </groups>
+    <classes>
+      <class name="Grouping_in_TestNG.Grouping"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
